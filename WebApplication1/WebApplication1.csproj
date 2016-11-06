@@ -86,6 +86,7 @@
     <Folder Include="css\" />
     <Folder Include="fonts\" />
     <Folder Include="js\" />
+    <Folder Include="Login\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

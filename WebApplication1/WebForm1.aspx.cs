@@ -18,12 +18,30 @@ namespace WebApplication1
         {
             for (int i = 0; i < 25; i++)
             {
+                TableRow row = new TableRow();
+                GameField.Rows.Add(row);
                 List<string> cord = new List<string>();
                 for (int j = 0; j < 15; j++)
                 {
+                    TableCell cell = new TableCell();
+                    cell.Width = 30;
+                    cell.Height = 30;
+                    GameField.Rows[i].Cells.Add(cell);
                     cord.Add(null);
                 }
                 coords.Add(cord);
+            }
+            for (int i = 0; i < 4; i++)
+            {
+                TableRow row = new TableRow();
+                FigureShow.Rows.Add(row);
+                for (int j = 0; j < 4; j++)
+                {
+                    TableCell cell = new TableCell();
+                    cell.Width = 30;
+                    cell.Height = 30;
+                    FigureShow.Rows[i].Cells.Add(cell);
+                }
             }
             CreateFigure();
             Leaders();
