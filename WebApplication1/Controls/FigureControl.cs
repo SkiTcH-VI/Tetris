@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace WebApplication1
 {
-    public class FigureControl
+    public class FigureControl 
     {
         public Table FigureShow;
         public Table GameField;

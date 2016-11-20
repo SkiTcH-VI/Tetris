@@ -50,11 +50,21 @@ namespace WebApplication1
             fControl.Label1 = Label1;
             fControl.CreateFigure();
         }
-
         [WebMethod]
-        public void Timer_Tick()
+        public static void Timer_Tick(Table GameField, Table FigureShow, Label Label1)
         {
-            Label1.Text = "WORK!!!";
+            
+            //if (VariableData.pause == false)
+            //{
+            //    FigureControl fControl = new FigureControl();
+            //    fControl.FigureShow = FigureShow;
+            //    fControl.GameField = GameField;
+            //    fControl.Label1 = Label1;
+            //    if (fControl.CheckFigure(3, VariableData.figures[VariableData.figures.Count - 1]))
+            //    {
+            //        fControl.Move(3, VariableData.figures[VariableData.figures.Count - 1]);
+            //    }
+            //}
         }
     }
 }

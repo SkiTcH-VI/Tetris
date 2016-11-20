@@ -5,16 +5,18 @@
 <head runat="server">
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/Pages/Default.js"></script>
     <title>Calc</title>
 </head>
 <body>
     <form runat="server">
         <asp:scriptmanager runat="server"></asp:scriptmanager>
         <div style="position: absolute; top: 315px; left: 824px;">
-        <asp:Label ID="Label1" runat="server"></asp:Label>
+        <asp:Label ID="Label1" runat="server">Text</asp:Label>
             </div>
         <div style="position: absolute; top: 364px; left: 825px;">
             <asp:ListBox ID="ListBox1" runat="server" Height="277px" Width="198px"></asp:ListBox>
+            <asp:Button ID="button" runat="server" />
         </div>
         <asp:Table ID="GameField" runat="server" CssClass="table-bordered">
         </asp:Table>
